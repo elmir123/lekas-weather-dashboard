@@ -24,13 +24,32 @@
 
   <body>
     <header class="jumbotron">
-      
+      <h1>Weather Dashboard</h1>
     </header>
     <div class="container">
-      
+        <div class="row">
+            <div class="col-md-3">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" id="city_search" />
+                <div class="input-group-append">
+                 <button class="btn btn-primary" id="search_button">Search</button> 
+                </div>
+              </div>
+              <div id="currentcities">
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="row" id="current">
+              </div>
+              <h2 class="daylycard">8 Day Forcast</h2>
+              <div class="row" id="sevenday">
 
-    </div>  
+              </div>
+            </div>
+        </div>
     </div>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
