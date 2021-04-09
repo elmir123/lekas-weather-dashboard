@@ -4,6 +4,26 @@
 .daylycard{
     margin: 20px;
 }
+#sevenday{
+    align-items: center;
+}
 .sevenday{
-    margin: 20px;
+    margin: 2px;
+    padding: 20px;
+}
+.sevenday h3{
+    font-size: large;
+}
+.sevenday h4{
+    font-size: medium;
+}
+header h1{
+    text-align: center;
+}
+header h1 span{
+    font-size: medium;
+    display: block;
+}
+.daylycard{
+    display: none;
 }

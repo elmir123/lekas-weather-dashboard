@@ -23,28 +23,48 @@
   </head>
 
   <body>
-    <header class="jumbotron">
-      <h1>Weather Dashboard</h1>
+    <header class="jumbotron bg-warning">
+      <h1>Weather Dashboard<span id="time"></span></h1>
     </header>
     <div class="container">
         <div class="row">
             <div class="col-md-3">
+              <h2>Search cities</h2>
               <div class="input-group mb-3">
-                <input type="text" class="form-control" id="city_search" />
+              <form action="" method="get">
+                <input type="text" name="city" class="form-control" id="city_search" />
                 <div class="input-group-append">
-                 <button class="btn btn-primary" id="search_button">Search</button> 
+                 <button type="submit" class="btn btn-primary" id="search_button">Search</button> 
                 </div>
+              </form>
               </div>
               <div id="currentcities">
               </div>
             </div>
             <div class="col-md-9">
-              <div class="row" id="current">
+              <div class="card daylycard">
+                <div class="card-header bg-primary text-white">
+                  <h2 class="">Current</h2>
+                </div>
+                <div class="card-body">
+                  <div class="row" id="current">
+                  </div>
+                </div>
               </div>
-              <h2 class="daylycard">8 Day Forcast</h2>
-              <div class="row" id="sevenday">
+              
+              <div class="card daylycard">
+                <div class="card-header bg-primary text-white">
+                  <h2 class="daylycard">8 Day Forcast</h2>
+                </div>
+                <div class="card-body">
+                  <div class="row justify-content-md-center" id="sevenday">
 
+                  </div>
+                </div>
               </div>
+
+              
+              
             </div>
         </div>
     </div>
