@@ -20,6 +20,7 @@ if (city){
 // get stored items in cities
 var storedCities = JSON.parse(localStorage.getItem('cities'));
 //time interval
+$("#time").text(moment().format("dddd, MMMM Do YYYY, hh:mm:ss"))
 setInterval(function(){
     $("#time").text(moment().format("dddd, MMMM Do YYYY, hh:mm:ss"))
 },1000)
@@ -83,7 +84,7 @@ if (city){
             $("#current").append(current.addClass("col-md-12 card shadow").append(city,date,temp,humidity,windSpeed,uvi))
             //build the 7 day forcast
             var day_cont=$(sevenday);
-            //set first item to today other will have day of the week
+            //set first item to today others will have day of the week titles
             var first_item=true
             for(day of data.daily){
                 var daydiv=$(document.createElement('div')).addClass("col-md-3 col-5 card sevenday shadow text-white bg-primary mb-3");
@@ -92,6 +93,7 @@ if (city){
                 }else{
                     date='<h3>'+moment(day.dt,"X").format("dddd")+'</h3><span class="datexsmall">'+moment(day.dt,"X").format("MMMM Do YYYY")+'</span>'
                 }
+                //change the today to day of the week check
                 first_item=false
                 img='&nbsp;<img src="'+imgbase+day.weather[0].icon+'@2x.png" /><br>'
                 temp='<h4><span>Temperature:</span> '+parseInt(day.temp.day)+' &#176;C</h4>'

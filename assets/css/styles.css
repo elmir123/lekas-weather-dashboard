@@ -1,12 +1,21 @@
+header h1{
+    text-align: center;
+}
+/* put the time to second line as block */
+header h1 span{
+    font-size: medium;
+    display: block;
+}
+/* Current conditions title */
 #current > h3{
     font-size: medium;
 }
+/* dailycard includes the current and 7 day card section blocks */
 .daylycard{
     margin: 20px;
+    display: none;
 }
-#sevenday{
-    align-items: center;
-}
+/* 7 day forcast cards */
 .sevenday{
     margin: 2px;
     padding: 20px;
@@ -17,13 +26,4 @@
 .sevenday h4{
     font-size: medium;
 }
-header h1{
-    text-align: center;
-}
-header h1 span{
-    font-size: medium;
-    display: block;
-}
-.daylycard{
-    display: none;
-}
+
