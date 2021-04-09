@@ -24,10 +24,11 @@
 
   <body>
     <header class="jumbotron bg-warning">
-      <h1>Weather Dashboard<span id="time"></span></h1>
+      <h1>Lekas Weather Dashboard<span id="time"></span></h1>
     </header>
     <div class="container">
         <div class="row">
+            <!-- Search City Column -->
             <div class="col-md-3">
               <h2>Search cities</h2>
               <div class="input-group mb-3">
@@ -41,6 +42,7 @@
               <div id="currentcities">
               </div>
             </div>
+            <!-- Weather Forcast Column -->
             <div class="col-md-9">
               <div class="card daylycard">
                 <div class="card-header bg-primary text-white">
@@ -51,7 +53,6 @@
                   </div>
                 </div>
               </div>
-              
               <div class="card daylycard">
                 <div class="card-header bg-primary text-white">
                   <h2 class="daylycard">8 Day Forcast</h2>
@@ -62,15 +63,9 @@
                   </div>
                 </div>
               </div>
-
-              
-              
             </div>
         </div>
     </div>
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
