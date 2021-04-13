@@ -64,7 +64,6 @@ if (city){
         $.get(sevenDayF+lnlo, function() {}).done(function(data) { 
             var uvclass;
             //handle the uvi coloring
-            console.log(data.current.uvi);
             if(parseFloat(data.current.uvi) < 2.00){
                 uvclass="badge badge-success"
             }else if( parseFloat(data.current.uvi) < 5.00 ){
