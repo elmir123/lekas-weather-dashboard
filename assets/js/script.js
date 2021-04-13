@@ -1,9 +1,9 @@
 //api to get city long and lat coordinates
-var rurl="http://api.openweathermap.org/data/2.5/forecast?appid=bdf0854466178764bfbed03dad31a9b4&units=metric&q="
+var rurl="https://api.openweathermap.org/data/2.5/forecast?appid=bdf0854466178764bfbed03dad31a9b4&units=metric&q="
 //api url to the 7 day api
 var sevenDayF = "https://api.openweathermap.org/data/2.5/onecall?&appid=bdf0854466178764bfbed03dad31a9b4&units=metric&exclude=minutely,hourly&"
 //weather image base url
-var imgbase="http://openweathermap.org/img/wn/"
+var imgbase="https://openweathermap.org/img/wn/"
 //get parameters from the url
 var urlParams = new URLSearchParams(window.location.search);
 //get pagebase url
